@@ -18,6 +18,20 @@ html {
     height: 100%;
 }
 
+.footer {
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-color: transparent;
+    height: 40px;
+    border: none;
+    color: #000000;
+    vertical-align: middle;
+}
+
+.icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -35,6 +49,7 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+    color: #000;
 }
 
 @media(min-width:768px) {
@@ -62,6 +77,21 @@ a:focus {
     font-weight: 400;
 }
 
+.unselectable {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+/*FADE/SHOW menu on hover*/
+.navanim div{
+    display: none;
+}
+
+.navcont div:hover + .navanim div {
+    display: block;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -76,6 +106,10 @@ a:focus {
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;
+}
+
+.navbar-brand, .samefont {
+    font-size: 16px;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
@@ -199,13 +233,13 @@ a:focus {
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
+    width: 50px;
+    height: 50px;
+    margin-top: 435px;
+    padding: 8px 13px;
     border: 2px solid #fff;
     border-radius: 100%!important;
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
@@ -362,6 +396,7 @@ footer {
 footer p {
     margin: 0;
 }
+
 
 ::-moz-selection {
     text-shadow: none;
