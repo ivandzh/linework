@@ -30,6 +30,19 @@ html {
 .icon {
     padding-left: 10px;
     padding-right: 10px;
+    color: #8c4a52;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
+}
+
+.iconBlack {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
 
 h1,
@@ -154,7 +167,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #7a7a7a;
 }
 
 @media(min-width:768px) {
@@ -176,6 +189,10 @@ a:focus {
 
     .navbar-custom.top-nav-collapse a {
         color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse li a:hover {
+        color: rgba(0, 0, 0, 0.53);
     }
 }
 
@@ -322,12 +339,6 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
@@ -337,10 +348,6 @@ a:focus {
         padding: 100px 0;
     }
 
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
 }
 
 .btn {
