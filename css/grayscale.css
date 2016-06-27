@@ -450,6 +450,7 @@ body {
     height: 200px;
     width: 200px;
     display:inline-block;
+    padding: 5px 5px 5px 5px;
 }
 
 .imgDescription {
@@ -478,4 +479,8 @@ body {
 
 .scrollable-sect {
     overflow: scroll;
+}
+
+#instafeed::-webkit-scrollbar {
+    display: none;
 }
