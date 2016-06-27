@@ -253,13 +253,12 @@
     <!-- Instagram Feed JavaScript -->
     <script src="js/instafeed.min.js"></script>
     <script type="text/javascript">
-        var feed = new Instafeed({
-            get: 'tagged',
-            tagName: 'awesome',
-            clientId: 'c5ee4573bba64f6a804042cba0c21d97',
+        var userFeed = new Instafeed({
+            get: 'user',
+            userId: '413259766',
             accessToken: '413259766.1677ed0.608d8d83434646c39962dd810f0f25d6'
         });
-        feed.run();
+        userFeed.run();
     </script>
 
 </body>
