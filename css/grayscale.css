@@ -32,9 +32,9 @@ html {
     padding-left: 10px;
     padding-right: 10px;
     color: #8c4a52;
-    -webkit-transition: color .5s ease-in-out;
-    -moz-transition: color .5s ease-in-out;
-    transition: color .5s ease-in-out;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .iconBlack {
@@ -52,6 +52,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: #000000;
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -169,6 +170,19 @@ a:focus {
 
 .navbar-custom .nav li.active a:hover {
     color: #7a7a7a;
+}
+
+.navbar-custom .navbar-special a  {
+    color: #000000;
+    font-style: italic;
+}
+
+.navbar-custom .navbar-special .nav li.active a {
+    color: #8c4a52;
+}
+
+.navbar-custom .navbar-special .nav li a:hover {
+    color: #8c4a52;
 }
 
 @media(min-width:768px) {

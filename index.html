@@ -53,7 +53,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about" onclick="changeBlack()">The Studio</a>
+                        <a class="page-scroll" href="#studio">The Studio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#work">Work</a>
@@ -80,7 +80,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <!--<h2 class="brand-heading unselectable"><br><br><br><br></h2>-->
                         <!--<p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>-->
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#studio" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -89,13 +89,53 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
+    <!-- The Studio Section -->
+    <section id="studio" class="container" style="min-width: 90%; min-height: 100%; ">
+        <!--<div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 style="color: #000">The Studio</h2>
-                        <!--<p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>-->
                     </div>
+        </div>-->
+        <!--<nav>
+        <ul class="nav navbar-nav" style="padding-top: 60px">
+            <li class="active"><a data-toggle="tab" href="#home">About</a></li>
+            <li><a data-toggle="tab" href="#menu1">Press</a></li>
+            <li><a data-toggle="tab" href="#menu2">Progress</a></li>
+            <li><a data-toggle="tab" href="#menu3">Live Feed</a></li>
+        </ul></nav>-->
+
+
+        <nav class="navbar navbar-custom" style="padding-top: 40px">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-right navbar-special" style="padding-right: 10px">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a data-toggle="tab" href="#about">About</a></li>
+                        <li><a data-toggle="tab" href="#press">Press</a></li>
+                        <li><a data-toggle="tab" href="#progress">Progress</a></li>
+                        <li><a data-toggle="tab" href="#feed">Live Feed</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+        </nav>
+
+        <div class="tab-content">
+        <div id="about" class="tab-pane fade in active">
+            <h3>About</h3>
+            <p>Some content.</p>
+        </div>
+        <div id="press" class="tab-pane fade">
+            <h3>Press</h3>
+            <p>Some content in menu 1.</p>
+        </div>
+        <div id="progress" class="tab-pane fade">
+            <h3>Progress</h3>
+            <p>Some content in menu 2.</p>
+        </div>
+            <div id="feed" class="tab-pane fade">
+                <h3>Live Feed</h3>
+                <p>Some content in menu 2.</p>
+                <div id="instafeed"></div>
+            </div>
         </div>
     </section>
 
@@ -115,8 +155,10 @@
                 <h2 style="color: #000">Work</h2>
             </div>
         </div>
-    </section>
 
+        <!-- Full Page Image Background Carousel Header -->
+
+    </section>
 
     <!-- Sketchbook Section -->
     <section id="sketchbook" class="container content-section text-center">
@@ -207,6 +249,18 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <!-- Instagram Feed JavaScript -->
+    <script src="/node_modules/instafeed.js/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'awesome',
+            clientId: 'c5ee4573bba64f6a804042cba0c21d97',
+            accessToken: '413259766.1677ed0.608d8d83434646c39962dd810f0f25d6'
+        });
+        feed.run();
+    </script>
 
 </body>
 
