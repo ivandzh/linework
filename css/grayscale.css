@@ -475,3 +475,7 @@ body {
     visibility: visible;
     opacity: 1;
 }
+
+.scrollable-sect {
+    overflow: scroll;
+}
