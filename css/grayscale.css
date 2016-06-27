@@ -449,6 +449,7 @@ body {
     position: relative;
     height: 200px;
     width: 200px;
+    display:inline-block;
 }
 
 .imgDescription {
@@ -459,7 +460,8 @@ body {
     right: 0;
     background: rgba(140, 74, 82, 0.72);
     color: #fff;
-
+    font-size: 0.6em;
+    padding: 8px 8px 8px 8px;
 
     visibility: hidden;
     opacity: 0;
