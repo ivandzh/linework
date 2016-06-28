@@ -47,7 +47,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav samefont">
+                <ul class="nav navbar-nav samefont" id="nav-right">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -121,7 +121,7 @@
         <div class="tab-content">
         <div id="about" class="tab-pane fade in active">
             <h3>About</h3>
-            <p>Some information abou the studio.</p>
+            <p>Some information about the studio.</p>
         </div>
         <div id="press" class="tab-pane fade">
             <h3>Press</h3>
@@ -133,7 +133,7 @@
         </div>
             <div id="feed" class="tab-pane fade">
                 <h3>Live Feed</h3>
-                <div class="scrollable-sect" id="instafeed" style="max-height: 630px"></div>
+                <div class="scrollable-sect" id="instafeed" style="max-height: 65vh"></div>
             </div>
         </div>
     </section>
@@ -188,7 +188,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section">
+    <section id="contact" class="container content-section scrollable-sect">
 
         <h2 style="color: #000">Contact</h2>
         <p>
@@ -256,7 +256,7 @@
             get: 'user',
             userId: '413259766',
             accessToken: '413259766.1677ed0.608d8d83434646c39962dd810f0f25d6',
-            template: '<div class="imgWrap"><a href="{{link}}"><img src="{{image}}" alt="{{caption}}" width="200px"/><p class="imgDescription">{{caption}}</p></a></div>'
+            template: '<div class="imgWrap"><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}" width="200px"/><p class="imgDescription">{{caption}}</p></a></div>'
         });
         userFeed.run();
     </script>
