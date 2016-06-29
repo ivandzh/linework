@@ -61,7 +61,7 @@ h6 {
     color: #000000;
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "MyHelvetica",Helvetica,Arial,sans-serif;
+    font-family: "MyHelvetica Light",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -117,7 +117,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "MyHelvetica",Helvetica,Arial,sans-serif;
+    font-family: "MyHelvetica Light",Helvetica,Arial,sans-serif;
     background-color: #ffffff;
 }
 
@@ -193,7 +193,7 @@ a:focus {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 30px 0;
+        padding: 70px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
@@ -243,7 +243,10 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 15px;
+    margin-top: 62vh;
+    text-transform: uppercase;
+    color:rgba(255, 255, 255, 0.5);
 }
 
 .intro .intro-body .intro-text {
@@ -266,8 +269,11 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
-        color:rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+    }
+
+    .intro .intro-body .brand-heading:hover {
+        color: #ffffff;
     }
 
     .intro .intro-body .intro-text {
@@ -278,10 +284,10 @@ a:focus {
 .btn-circle {
     width: 50px;
     height: 50px;
-    margin-top: 435px;
-    padding: 8px 13px;
+    margin-top: 10vh;
+    padding: 8px 13px;/*
     border: 2px solid #fff;
-    border-radius: 100%!important;
+    border-radius: 100%!important;*/
     font-size: 25px;
     color: #fff;
     background: 0 0;
@@ -294,7 +300,7 @@ a:focus {
 .btn-circle:focus {
     outline: 0;
     color: #fff;
-    background: rgba(255,255,255,.1);
+    /*background: rgba(255,255,255,.1);*/
 }
 
 .btn-circle i.animated {
@@ -458,8 +464,8 @@ body {
 /* SHOW caption on HOVER*/
 .imgWrap {
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     display:inline-block;
     margin: 5px 5px 5px 5px;
 }
@@ -470,8 +476,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     background: rgba(255, 255, 255, 1);
     color: #000;
     font-size: 0.9em;
@@ -500,11 +506,26 @@ body {
     display: none;
 }
 
+#work_div1::-webkit-scrollbar {
+    display: none;
+}
+#work_div2::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     max-height: 60vh;
 }
 
+.verticalLine {
+    border-left: thin solid rgba(255, 255, 255, 0.5);
+    margin: 0 15px 0 12px;
+}
 
+.verticalLineBig {
+    border-left: thin solid black;
+    margin: 0 0 0 20px;
+}
 
 /*
 .navbar-custom.top-nav-collapse a {
