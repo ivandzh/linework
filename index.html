@@ -53,8 +53,28 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#studio">The Studio</a>
+                        <div class="dropdown">
+                            <a class="special" onclick="showDrop()">The Studio</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a class="page-scroll" href="#studio" onclick="hideDrop()">About</a>
+                                <a class="page-scroll" href="#press" onclick="hideDrop()">Press</a>
+                                <a class="page-scroll" href="#process" onclick="hideDrop()">Process</a>
+                                <a class="page-scroll" href="#feed" onclick="hideDrop()">Live Feed</a>
+                            </div>
+                        </div>
                     </li>
+
+                    <!--<li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown</button>
+                            <div class="dropdown-content nav navbar-nav">
+                                <a class="page-scroll" data-toggle="tab" href="#about">About</a>
+                                <a class="page-scroll" data-toggle="tab" href="#press">Press</a>
+                                <a data-toggle="tab" href="#process">Process</a>
+                                <a data-toggle="tab" href="#feed">Live Feed</a>
+                            </div>
+                        </div>
+                    </li>-->
                     <li>
                         <a class="page-scroll" href="#work">Work</a>
                     </li>
@@ -95,59 +115,34 @@
     </header>
 
     <!-- The Studio Section -->
-    <section id="studio" class="container" style="min-width: 90%; min-height: 100%; ">
-        <!--<div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 style="color: #000">The Studio</h2>
-                    </div>
-        </div>-->
-        <!--<nav>
-        <ul class="nav navbar-nav" style="padding-top: 60px">
-            <li class="active"><a data-toggle="tab" href="#home">About</a></li>
-            <li><a data-toggle="tab" href="#menu1">Press</a></li>
-            <li><a data-toggle="tab" href="#menu2">Progress</a></li>
-            <li><a data-toggle="tab" href="#menu3">Live Feed</a></li>
-        </ul></nav>-->
+    <section id="studio" class="container content-section" style="min-width: 90%; min-height: 100%; ">
+        <h4>About</h4>
+        <p>Some information about the studio.</p>
+    </section>
 
+    <!-- The Press Section -->
+    <section id="press" class="container content-section" style="min-width: 90%; min-height: 100%; ">
+        <h4>Press</h4>
+        <p>Press coverage of the studio's work.</p>
+    </section>
 
-        <nav class="navbar navbar-custom" style="padding-top: 40px">
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="navbar-right navbar-special" style="padding-right: 10px">
-                    <ul class="nav navbar-nav ">
-                        <li class="active"><a data-toggle="tab" href="#about">About</a></li>
-                        <li><a data-toggle="tab" href="#press">Press</a></li>
-                        <li><a data-toggle="tab" href="#progress">Process</a></li>
-                        <li><a data-toggle="tab" href="#feed">Live Feed</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-        </nav>
+    <!-- The Process Section -->
+    <section id="process" class="container content-section" style="min-width: 90%; min-height: 100%; ">
+        <h4>Process</h4>
+        <p>The process of work.</p>
+    </section>
 
-        <div class="tab-content">
-        <div id="about" class="tab-pane fade in active">
-            <h3>About</h3>
-            <p>Some information about the studio.</p>
-        </div>
-        <div id="press" class="tab-pane fade">
-            <h3>Press</h3>
-            <p>Press coverage of the studio's work.</p>
-        </div>
-        <div id="progress" class="tab-pane fade">
-            <h3>Progress</h3>
-            <p>Some work that is in progress.</p>
-        </div>
-            <div id="feed" class="tab-pane fade">
-                <h3>Live Feed</h3>
-                <div class="scrollable-sect" id="instafeed" style="max-height: 65vh"></div>
-            </div>
-        </div>
+    <!-- The Live Feed Section -->
+    <section id="feed" class="container content-section" style="min-width: 90%; min-height: 100%; ">
+            <h4>Live Feed</h4>
+            <div class="scrollable-sect" id="instafeed" style="max-height: 65vh"></div>
     </section>
 
     <!-- Work Section -->
     <section id="work" class="content-section text-center">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h2 style="color: #000">Work</h2>
+                <h3 style="color: #000">Work</h3>
             </div>
         </div>
         <div style="display: inline-block; max-height: 60vh">
@@ -182,7 +177,7 @@
         </div>-->
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h2 style="color: #000">Sketchbook</h2>
+                <h3 style="color: #000">Sketchbook</h3>
             </div>
         </div>
     </section>
@@ -190,7 +185,7 @@
     <!-- Contact Section -->
     <section id="contact" class="container content-section scrollable-sect">
 
-        <h2 style="color: #000">Contact</h2>
+        <h3 style="color: #000">Contact</h3>
         <p>
             Studio E6 <br>
             The Imperial Laundry <br>

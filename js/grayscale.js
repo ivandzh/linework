@@ -39,3 +39,29 @@ $('.navbar-collapse ul li a').click(function() {
 $('.carousel').carousel({
     interval: false
 });
+
+function showDrop() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function hideDrop() {
+    if(document.getElementById("myDropdown").classList.contains("show"))
+    {
+        document.getElementById("myDropdown").classList.remove("show")
+    }
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.special')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+};
