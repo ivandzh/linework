@@ -34,11 +34,11 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav id="navigation" class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container" style="min-width: 90%">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                    <p><i class="fa fa-bars"></i></p>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
                     <span class="light unselectable" >Studio Linework </span>
@@ -46,20 +46,20 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div id="right-menu" class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav samefont" id="nav-right">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <div class="dropdown">
+                        <div id="myButton" class="dropdown">
                             <a class="special" onclick="showDrop()">The Studio</a>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a class="page-scroll" href="#studio" onclick="hideDrop()">About</a>
-                                <a class="page-scroll" href="#press" onclick="hideDrop()">Press</a>
-                                <a class="page-scroll" href="#process" onclick="hideDrop()">Process</a>
-                                <a class="page-scroll" href="#feed" onclick="hideDrop()">Live Feed</a>
+                            <div id="myDropdown" class="dropdown-content" style="font-size: 14px">
+                                <a style="padding: 5px 16px 5px 16px" class="page-scroll" href="#studio" onclick="hideDrop()">About</a>
+                                <a style="padding: 5px 16px 5px 16px" class="page-scroll" href="#press" onclick="hideDrop()">Press</a>
+                                <a style="padding: 5px 16px 5px 16px" class="page-scroll" href="#process" onclick="hideDrop()">Process</a>
+                                <a style="padding: 5px 16px 5px 16px" class="page-scroll" href="#feed" onclick="hideDrop()">Live Feed</a>
                             </div>
                         </div>
                     </li>
