@@ -8,10 +8,16 @@
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $(".navbar-fixed-top").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
-            function(event) {
+        if ($(window).width() >= 767){
+            $(".navbar-fixed-top").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
+                function(event) {
                     $("#right-menu").addClass("navanim")
-            });
+                });
+        }
+        else
+        {
+            $("#bars").addClass("makeBlack")
+        }
         $(".icon").addClass("iconBlack");
 
     } else {

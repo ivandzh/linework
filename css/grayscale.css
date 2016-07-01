@@ -52,6 +52,10 @@ html {
     transition: color .5s ease-in-out;
 }
 
+.makeBlack {
+    color: #000000;
+}
+
 h1,
 h2,
 h3,
@@ -300,7 +304,7 @@ a:focus {
     border: 2px solid #fff;
     border-radius: 100%!important;*/
     font-size: 25px;
-    color: #fff;
+    color: #8c4a52;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -538,3 +542,66 @@ body {
     cursor: pointer;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+/*Mobile CSS Rules*/
+
+@media(max-width:767px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #ffffff;
+    }
+
+    .navbar-custom.top-nav-collapse a {
+        color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse li a:hover {
+        color: rgba(0, 0, 0, 0.53);
+    }
+
+    .intro {
+        display: table;
+        width: 100%;
+        height: 100vh;
+        /*padding: 100px 0;*/
+        text-align: center;
+        color: #fff;
+        background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+        background-color: #000;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 16px;
+        margin-top: 53vh;
+        text-transform: uppercase;
+        color:rgba(255, 255, 255, 0.5);
+    }
+
+    .mobile-menu {
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+
+    .content-section {
+        padding-top: 12vh;
+    }
+}
