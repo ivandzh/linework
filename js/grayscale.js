@@ -93,3 +93,12 @@ $('#myButton').mouseleave(function() {
         document.getElementById("myDropdown").classList.remove("show")
     }
 });
+
+/*PREVENTING scrolling on iOS*/
+var fixed = document.getElementById('page-top');
+
+fixed.addEventListener('touchmove', function(e) {
+
+    e.preventDefault();
+
+}, false);

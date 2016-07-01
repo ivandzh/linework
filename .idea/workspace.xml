@@ -27,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231" vertical-offset="816" max-vertical-offset="4709">
-              <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+            <state vertical-scroll-proportion="-9.807693" vertical-offset="306" max-vertical-offset="4709">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -58,21 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grayscale.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="grayscale.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/grayscale.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6023392" vertical-offset="10010" max-vertical-offset="10523">
+            <state vertical-scroll-proportion="-12.36" vertical-offset="10010" max-vertical-offset="10523">
               <caret line="607" column="27" selection-start-line="607" selection-start-column="27" selection-end-line="607" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grayscale.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="grayscale.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/grayscale.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.81040895" vertical-offset="1247" max-vertical-offset="1785">
+              <caret line="103" column="10" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -97,8 +97,8 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/index_bg.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/grayscale.js" />
         <option value="$PROJECT_DIR$/css/grayscale.css" />
+        <option value="$PROJECT_DIR$/js/grayscale.js" />
       </list>
     </option>
   </component>
@@ -1027,18 +1027,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/grayscale.js">
+    <entry file="file://$PROJECT_DIR$/css/grayscale.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="36" />
+        <state vertical-scroll-proportion="-12.36" vertical-offset="10010" max-vertical-offset="10523">
+          <caret line="607" column="27" selection-start-line="607" selection-start-column="27" selection-end-line="607" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="816" max-vertical-offset="4709">
-          <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="306" max-vertical-offset="4709">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1067,10 +1067,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/grayscale.css">
+    <entry file="file://$PROJECT_DIR$/js/grayscale.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6023392" vertical-offset="10010" max-vertical-offset="10523">
-          <caret line="607" column="27" selection-start-line="607" selection-start-column="27" selection-end-line="607" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.81040895" vertical-offset="1247" max-vertical-offset="1785">
+          <caret line="103" column="10" selection-start-line="103" selection-start-column="10" selection-end-line="103" selection-end-column="10" />
           <folding />
         </state>
       </provider>
