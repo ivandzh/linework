@@ -595,6 +595,13 @@ body {
         color:rgba(255, 255, 255, 0.5);
     }
 
+    .content-section {
+        padding-top: 12vh;
+    }
+
+}
+
+@media(max-width:375px) {
     .mobile-menu {
         display: inline-block;
         margin-left: 30px;
@@ -604,10 +611,4 @@ body {
     .mobile-menu a {
         margin: 0 5px 0 5px;
     }
-
-    .content-section {
-        padding-top: 12vh;
-    }
-
-
 }
