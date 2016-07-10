@@ -95,10 +95,11 @@ $('#myButton').mouseleave(function() {
 });
 
 /*PREVENTING scrolling on iOS*/
+/*
 var fixed = document.getElementById('page-top');
 
 fixed.addEventListener('touchmove', function(e) {
 
     e.preventDefault();
 
-}, false);
+}, false);*/
