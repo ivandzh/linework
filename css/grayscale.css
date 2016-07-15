@@ -523,6 +523,10 @@ body {
     overflow: scroll;
 }
 
+#studio::-webkit-scrollbar {
+    display: none;
+}
+
 #instafeed::-webkit-scrollbar {
     display: none;
 }
