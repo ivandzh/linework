@@ -527,6 +527,13 @@ body {
     display: none;
 }
 
+#work-content-left::-webkit-scrollbar {
+    display: none;
+}
+#work-content-right::-webkit-scrollbar {
+    display: none;
+}
+
 #instafeed::-webkit-scrollbar {
     display: none;
 }
@@ -678,3 +685,4 @@ body {
         margin: 0 5px 0 5px;
     }
 }
+

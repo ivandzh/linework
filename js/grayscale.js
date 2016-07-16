@@ -33,7 +33,6 @@ function collapseNavbar() {
  /*MAKE DELAY WITH JAVASCRIPT*/
 
 $(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -103,3 +102,56 @@ fixed.addEventListener('touchmove', function(e) {
     e.preventDefault();
 
 }, false);*/
+
+/*
+$(document).ready(function() {
+    collapseNavbar();
+
+    $('#masonry').masonry({
+        columnWidth: 160,
+        itemSelector: '.item'
+    });*/
+/*.imagesLoaded(function() {
+        $('.grid').masonry('reload');
+    });*//*
+
+});*/
+
+$(document).ready(function(){
+    collapseNavbar();
+
+    $('#work-content-top').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        centerMode: false,
+        centerPadding: '50px',
+        variableWidth: true
+    });
+    $('.innerProject').slick({
+        dots: true,
+        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+
+    /*$('#work-content-bottom').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        centerMode: false,
+        centerPadding: '50px',
+        variableWidth: true
+    });*/
+});
+
+
+
