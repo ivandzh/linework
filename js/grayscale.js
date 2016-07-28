@@ -117,17 +117,111 @@ $(document).ready(function() {
 
 });*/
 
+function checkCurrent () {
+    /*
+     on click of list item with class active for dots, check if slide with class active hass class "active slide"
+     */
+
+
+}
+
+function switchSlide (slider) {
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('a[data-toggle="tab"]').removeClass('active-slide');
+        $('a[data-toggle="tab"]').addClass('non-active-slide');
+        $(this).removeClass('non-active-slide');
+        $(this).addClass('active-slide');
+    });
+
+        var currentSlider = slider; 
+        console.log("Current slider to show is " + currentSlider);
+
+        switch(currentSlider) {
+            case 'slider1':
+                $("#slider1").show();
+                $("#slider1").slick("slickPlay");
+                
+                $("#slider2").slick("slickPause");
+                $("#slider2").hide();
+                $("#slider3").slick("slickPause");
+                $("#slider3").hide();
+                $("#slider4").slick("slickPause");
+                $("#slider4").hide();
+                $("#slider5").slick("slickPause");
+                $("#slider5").hide();
+                break;
+            case 'slider2': 
+                $("#slider2").show();
+                $("#slider2").slick("slickPlay");
+                
+                $("#slider1").slick("slickPause");
+                $("#slider1").hide();
+                $("#slider3").slick("slickPause");
+                $("#slider3").hide();
+                $("#slider4").slick("slickPause");
+                $("#slider4").hide();
+                $("#slider5").slick("slickPause");
+                $("#slider5").hide();
+                break;
+            case 'slider3': 
+                $("#slider3").show();
+                $("#slider3").slick("slickPlay");
+                
+                $("#slider1").slick("slickPause");
+                $("#slider1").hide();
+                $("#slider2").slick("slickPause");
+                $("#slider2").hide();
+                $("#slider4").slick("slickPause");
+                $("#slider4").hide();
+                $("#slider5").slick("slickPause");
+                $("#slider5").hide();
+                break;
+            case 'slider4': 
+                $("#slider4").show();
+                $("#slider4").slick("slickPlay");
+                
+                $("#slider1").slick("slickPause");
+                $("#slider1").hide();
+                $("#slider2").slick("slickPause");
+                $("#slider2").hide();
+                $("#slider3").slick("slickPause");
+                $("#slider3").hide();
+                $("#slider5").slick("slickPause");
+                $("#slider5").hide();
+                break;
+            case 'slider5': 
+                $("#slider5").show();
+                $("#slider5").slick("slickPlay");
+                
+                $("#slider1").slick("slickPause");
+                $("#slider1").hide();
+                $("#slider2").slick("slickPause");
+                $("#slider2").hide();
+                $("#slider3").slick("slickPause");
+                $("#slider3").hide();
+                $("#slider4").slick("slickPause");
+                $("#slider4").hide();
+                break;
+            default:
+                break;
+        }
+    }
+
+
 $(document).ready(function(){
     collapseNavbar();
 
     $('#work-content-top').slick({
         dots: false,
-        infinite: false,
+        arrows: false,
+        infinite: true,
         speed: 300,
-        slidesToShow: 4,
-        centerMode: false,
+        slidesToShow: 1,
+        centerMode: true,
         centerPadding: '50px',
-        variableWidth: true
+        variableWidth: true,
+        focusOnSelect: true
     });
     $('.innerProject').slick({
         dots: true,
@@ -141,16 +235,20 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear'
     });
-
-    /*$('#work-content-bottom').slick({
-        dots: true,
-        infinite: true,
+    $('#slider1, #slider2, #slider3, #slider4, #slider5').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 3000,
         speed: 300,
-        slidesToShow: 3,
-        centerMode: false,
-        centerPadding: '50px',
-        variableWidth: true
-    });*/
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        cssEase: 'linear'
+    });
+
+    $("#slider1").slick("slickPlay");
 });
 
 

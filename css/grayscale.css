@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'MyHelvetica Light';
-    src: url('../fonts/HelveticaNeueCyr-Light.otf') format('opentype')
+    src: url('../fonts/HelveticaNeueCyr-Thin.otf') format('opentype')
 }
 
 
@@ -22,6 +22,11 @@ body {
 html {
     width: 100%;
     height: 100%;
+}
+
+.sectionStyle {
+    min-width: 90%; 
+    min-height: 100%;
 }
 
 .footer {
@@ -83,6 +88,7 @@ p {
     float: none;
 }
 
+/* Style for Process page*/
 .process {
     font-size: 16px;
 }
@@ -157,7 +163,7 @@ a:focus {
 }
 
 .light {
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .unselectable {
@@ -578,7 +584,7 @@ body {
     /*display: none;*/
     visibility: hidden;
     position: absolute;
-    background-color: transparent;
+    background-color: rgba(255,255,255, 0.5);
     min-width: 160px;
     /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
 
@@ -686,3 +692,60 @@ body {
     }
 }
 
+/* Designer side panel*/
+.designer-side {
+    width: 240px;
+    min-height: 100vh;
+    position: absolute;
+    background: #000000;
+    /*left: -240px;*/
+    right: 100vw;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* Style for About section*/
+.widthCentered {
+    max-width: 70%;
+    /*margin-right: auto;
+    margin-left: auto*/
+}
+
+/* Style for Work section*/
+.pad-right {
+    padding-right: 10px;
+}
+
+.active-slide, .non-active-slide {
+    outline : none;
+}
+
+.active-slide img { 
+    opacity: 1;
+}
+.non-active-slide img {
+    opacity: 0.3;
+}
+
+.work-top {
+   margin-bottom: 20px; 
+   width: 100%;
+}
+
+.project-title {
+    margin-top: 1.5em;
+}
+
+.big-slider-img {
+    max-height: 70vh; 
+    margin-left: auto; 
+    margin-right: auto
+}
+
+/*SLICK changes*/
+.slick-prev:before, .slick-next:before{
+    color:red;
+}
